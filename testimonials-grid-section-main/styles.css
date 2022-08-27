@@ -1,0 +1,136 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  grid-area: attribution;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p {
+  opacity: 90%;
+}
+
+p {
+  font-size: 13px;
+}
+
+.fullname {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 80px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "item1 item1 item2 item5 "
+    "item3 item4 item4 item5"
+    "attribution attribution attribution attribution"
+}
+
+.item1 {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
+  background-size: 90px;
+  padding-top: 10px;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  grid-area: item1;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.name {
+  display: flex;
+}
+
+.name img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+
+.item2 {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  grid-area: item2;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* border: 2px solid ; */
+  border-radius: 12px;
+}
+
+.item3 {
+  padding-top: 10px;
+  background-color: hsl(0, 0%, 100%);
+  grid-area: item3;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* border: 2px solid ; */
+  border-radius: 12px;
+}
+
+.item4 {
+  padding-top: 10px;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+  grid-area: item4;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* border: 2px solid ; */
+  border-radius: 12px;
+}
+
+.mainname {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+}
+
+.mainjob {
+  margin-top: 0px;
+  padding-left: 15px;
+}
+
+.item5 {
+  padding-top: 10px;
+  background-color: hsl(0, 0%, 100%);
+  grid-area: item5;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* border: 2px solid ; */
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 812px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "item1 "
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "attribution"
+  }
+}
